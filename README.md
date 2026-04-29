@@ -653,10 +653,10 @@ ct_at_left_label, ct_at_right_label = processor.process(
 )
 
 # Save outputs
-nib.save(nib.Nifti1Image(ct_at_left_patch, np.eye(4)), './data/cls_data/case_001/ct_at_left_patch.nii.gz')
-nib.save(nib.Nifti1Image(ct_at_right_patch, np.eye(4)),  './data/cls_data/case_001/ct_at_right_patch.nii.gz')
-nib.save(nib.Nifti1Image(ct_at_left_label.astype(np.uint8), np.eye(4)), './data/cls_data/case_001/ct_at_left_label.nii.gz')
-nib.save(nib.Nifti1Image(ct_at_right_label.astype(np.uint8), np.eye(4)), './data/cls_data/case_001/ct_at_right_label.nii.gz')
+nib.save(nib.Nifti1Image(ct_at_left_patch, np.eye(4)), './data/cls_data/train/case_001/ct_at_left_patch.nii.gz')
+nib.save(nib.Nifti1Image(ct_at_right_patch, np.eye(4)),  './data/cls_data/train/case_001/ct_at_right_patch.nii.gz')
+nib.save(nib.Nifti1Image(ct_at_left_label.astype(np.uint8), np.eye(4)), './data/cls_data/train/case_001/ct_at_left_label.nii.gz')
+nib.save(nib.Nifti1Image(ct_at_right_label.astype(np.uint8), np.eye(4)), './data/cls_data/train/case_001/ct_at_right_label.nii.gz')
 
 ```
 ###### Generated Files
