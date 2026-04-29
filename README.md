@@ -150,6 +150,7 @@ The installation typically takes:
 Download from Zenodo and extract into the repository root:
 - **Weights**: https://zenodo.org/records/17540420/files/model_weights.zip?download=1
 - **Password**: batnet
+  
 Expected structure:
 ```bash
 BATNet/
