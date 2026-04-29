@@ -362,20 +362,20 @@ processor = SymmetricalATProcessor(
 )
 
 ct_at_left_patch, ct_at_right_patch, _, _ = processor.process(
-    image_file,   # Path to the CT image.(./data/case_xxxx/image.nii.gz)
-    fat_file,     # Path to the adipose tissue mask.(/data/case_xxxx/seg_at_mask.nii.gz)
+    image_file,   # Path to the CT image.('./data/nii_10/case_20462/image.nii.gz')
+    fat_file,     # Path to the adipose tissue mask.('./data/nii_10/case_2046/seg_at_mask.nii.gz')
     None,
-    lung_file     # Path to the lung mask. (./data/case_xxxx/lobe.nii.gz)
+    lung_file     # Path to the lung mask. ('./data/nii_10/case_2046/lobe.nii.gz')
 )
 
 save_nii(
     ct_at_left_patch,
-    './data/case_xxxx/ct_at_left_patch.nii.gz'
+    './data/nii_10_test/case_2046/ct_at_left_patch.nii.gz'
 )
 
 save_nii(
     ct_at_right_patch,
-    './data/case_xxxx/ct_at_right_patch.nii.gz'
+    './data/nii_10_test/case_2046/ct_at_right_patch.nii.gz'
 )
 ```
 ###### Generated Output
