@@ -429,13 +429,10 @@ python bat_inf.py \
     --output results.csv
 ```
 ---
+
 ###### Parameter Explanation
 
-- --seg_weight: Adipose segmentation model weight path (only for end-to-end)
-- --device: cuda (default) / cpu; end-to-end inference only supports CUDA
-- --batch_size: Classification batch size, adjust according to GPU memory
-- --num_workers: DataLoader multi-process workers
-- --output: Output CSV path, omit to print results in terminal
+---
 
 - --input (**Required**)
 Input source. BATNet supports three formats:
