@@ -50,7 +50,7 @@ For detailed instructions, please refer to:
 - [Inference Guide](#inference-details)
 - [Training Guide](#training)
 - [Model Architecture](#model-architecture)
-### 1.2 Option A: Docker (Recommended)
+### 🐳 1.2 Docker (Recommended)
 We provide a pre-configured Docker image for rapid validation and reproducibility. The Docker image already contains the BATNet source code, model weights, and validation datasets, so it can run the examples without downloading separate files on the host machine.
 > **Note:** The README included in the Docker image may differ from the latest version on GitHub. Please refer to the GitHub repository for the most up-to-date documentation and usage instructions.
 #### 1.2.1 Prerequisites (host machine)
@@ -117,7 +117,7 @@ docker run --gpus all --rm --shm-size=16g batnet-image:v3 \
 docker run --gpus all --rm  --shm-size=16g batnet-image:v3 \
   bash -lc "python CE_BATCIs/ce_train.py"
 ```
-### 1.3 Conda Installation
+### 🐍 1.3 Conda Installation
 #### 1.3.1 Install dependencies
 To improve compatibility, security, and long-term maintainability, we have upgraded the BATNet runtime environment. The original release was developed under an earlier software stack, while the updated release adopts a modern and actively maintained environment. Both versions have been extensively validated and are fully functional. Users may choose either environment according to their hardware and software requirements.
 ##### Environment Comparison
