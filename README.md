@@ -646,10 +646,10 @@ processor = SymmetricalATProcessor(
 # Generate bilateral adipose patches
 ct_at_left_patch, ct_at_right_patch, \
 ct_at_left_label, ct_at_right_label = processor.process(
-    image_file,   # ./data/cls_data/case_001/train/image.nii.gz
-    fat_file,     # ./data/cls_data/case_001/train/fat_mask.nii.gz
-    bat_file,     # ./data/cls_data/case_001/train/brown_fat_mask.nii.gz
-    lung_file     # ./data/cls_data/case_001/train/lobe.nii.gz, Can None
+    image_file,   # ./data/cls_data/train/case_001/image.nii.gz
+    fat_file,     # ./data/cls_data/train/case_001/fat_mask.nii.gz
+    bat_file,     # ./data/cls_data/train/case_001/brown_fat_mask.nii.gz
+    lung_file     # ./data/cls_data/train/case_001/lobe.nii.gz, Can None
 )
 
 # Save outputs
