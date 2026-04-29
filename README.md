@@ -364,9 +364,9 @@ processor = SymmetricalATProcessor(
 
 ct_at_left_patch, ct_at_right_patch, _, _ = processor.process(
     image_file,   # Path to the CT image.('./data/nii_10/case_20462/image.nii.gz')
-    fat_file,     # Path to the adipose tissue mask.('./data/nii_10/case_2046/seg_at_mask.nii.gz')
+    fat_file,     # Path to the adipose tissue mask.('./data/nii_10/case_20462/seg_at_mask.nii.gz')
     None,
-    lung_file     # Path to the lung mask. ('./data/nii_10/case_2046/lobe.nii.gz')
+    lung_file     # Path to the lung mask. ('./data/nii_10/case_20462/lobe.nii.gz')
 )
 
 save_nii(
@@ -609,10 +609,12 @@ case_xxxx/
 - fat_mask.nii.gz: Adipose tissue mask. If this file is unavailable, BATNet will automatically invoke the MG_ATSeg model to generate it during training.
 - brown_fat_mask.nii.gz: Ground-truth brown adipose tissue annotation. This file is optional but strongly recommended for supervised training.
 - lobe.nii.gz: Lung mask.
+  
 During training, BATNet automatically performs:
 - Bilateral adipose patch extraction
 - Label generation
 - End-to-end CE_BATCIs optimization
+  
 The following files will be generated online:
 ```bash
 ├── ct_at_left_patch.nii.gz
