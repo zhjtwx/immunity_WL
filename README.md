@@ -558,6 +558,7 @@ Starting from the original DICOM series, each axial slice undergoes the followin
 
 Save each axial slice as an 8-bit grayscale PNG image.
 This preprocessing enhances adipose tissue contrast while suppressing irrelevant structures.
+
 ---
 
 #### 3.1.3 CE_BATCIs Dataset Structure
