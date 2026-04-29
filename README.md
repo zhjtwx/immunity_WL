@@ -323,6 +323,7 @@ case_xxxx/
 
 These bilateral adipose patches are generated using `pro_at_patch.py` and serve as direct input to the CE_BATCIs classification network.
 This dataset is specifically designed for rapid validation of the BAT classification module, without requiring adipose tissue segmentation or patch extraction.
+
 ---
 
 #### 2.1.2 Preparing Your Own Data
