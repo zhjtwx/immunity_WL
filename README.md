@@ -44,12 +44,7 @@ BATNet now provides two complementary inference modes: **end-to-end inference** 
 - [🐳 1.2 Docker (Recommended)](#-12-docker-recommended)
 - [🐍 1.3 Conda Installation](#-13-conda-installation)
 
-For detailed instructions, please refer to:
 
-- [Installation Guide](#installation)
-- [Inference Guide](#inference-details)
-- [Training Guide](#training)
-- [Model Architecture](#model-architecture)
 ### 🐳 1.2 Docker (Recommended)
 We provide a pre-configured Docker image for rapid validation and reproducibility. The Docker image already contains the BATNet source code, model weights, and validation datasets, so it can run the examples without downloading separate files on the host machine.
 > **Note:** The README included in the Docker image may differ from the latest version on GitHub. Please refer to the GitHub repository for the most up-to-date documentation and usage instructions.
