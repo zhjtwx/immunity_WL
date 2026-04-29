@@ -472,8 +472,6 @@ case_xxxx/
 - --seg_weight: Path to the adipose tissue segmentation model. Default: ./model_weights/mg_atseg_model.pth. (only for end-to-end)
 ---
 - --device: cuda (default) / cpu; end-to-end inference only supports CUDA.
-
-Inference device.Supported values:cuda and cpu.
 > **Important:** For end-to-end inference, the segmentation stage is configured to run on **GPU 0**. Please ensure that GPU 0 is available before execution.
 ---
 
