@@ -25,7 +25,7 @@ The complete inference workflow is illustrated below:
 ```text
 Chest CT + Lung Mask -> MG_ATSeg Segmentation -> Bilateral Patch Extraction -> CE_BATCIs Classification -> BAT Probability
 ```
-BATNet now provides two complementary inference modes: **end-to-end inference** (from raw CT and lung masks) and **classification-only inference** (from pre-extracted adipose patches). To facilitate reproducibility and rapid validation, we also provide two fully supported deployment options—**Docker** and **Conda**—for both inference and training. In addition, lightweight demonstration datasets are included, allowing users to quickly verify the complete BATNet pipeline, including MG_ATSeg segmentation and CE_BATCIs classification.
+BATNet now provides two complementary inference modes: **end-to-end inference** (from raw CT and lung masks) and **classification-only inference** (from pre-extracted adipose patches). To facilitate reproducibility and rapid validation, we also provide two fully supported deployment options—**Docker** and **Conda**—for both rapid validation and demo training scripts. In addition, lightweight demonstration datasets are included, allowing users to quickly verify the complete BATNet pipeline, including MG_ATSeg segmentation and CE_BATCIs classification.
 
 #### Choose one of the following installation methods: 
 
