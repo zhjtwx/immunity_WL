@@ -689,7 +689,7 @@ python CE_BATCIs/ce_train.py
 ```
 #### Notes
 - MG_ATSeg must be trained before CE_BATCIs if adipose masks are not already available.
-- During CE_BATCIs training, missing adipose masks and adipose patches will be automatically generated when necessary.
+- During CE_BATCIs training, missing adipose masks and adipose patches will be automatically generated when necessary. By default, the training script requires pre-existing adipose masks. If you need to generate adipose patches on the fly, you must explicitly provide the segmentation model path in BATDataset (defined in ce_dataset.py) and modify the training script accordingly.
 - For large-scale experiments, we recommend precomputing all patches offline using pro_at_patch.py to accelerate training.
 
 ---
