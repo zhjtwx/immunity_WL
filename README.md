@@ -370,12 +370,12 @@ ct_at_left_patch, ct_at_right_patch, _, _ = processor.process(
 
 save_nii(
     ct_at_left_patch,
-    './data/nii_10_test/case_2046/ct_at_left_patch.nii.gz'
+    './data/nii_10_test/case_20462/ct_at_left_patch.nii.gz'
 )
 
 save_nii(
     ct_at_right_patch,
-    './data/nii_10_test/case_2046/ct_at_right_patch.nii.gz'
+    './data/nii_10_test/case_20462/ct_at_right_patch.nii.gz'
 )
 ```
 ###### Generated Output
@@ -449,7 +449,7 @@ python bat_inf.py --input data/nii_10 --output nii_10_results.csv
 ```
 3. Multiple Case Directories
 ```bash
-python bat_inf.py --input data/nii_10/case_0001 data/nii_10/case_0002 --output selected_cases.csv
+python bat_inf.py --input data/nii_10/case_20076 data/nii_10/case_20195 --output selected_cases.csv
 ```
 **Valid Case Formats**
 
